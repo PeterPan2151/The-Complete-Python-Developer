@@ -7,8 +7,10 @@ user1 = {
 def authenticated(fn):
   
   def wrapper_func(*args, **kwargs):
-     if args[0]['valid']:
-        fn(*args, **kwargs) 
+    if args[0]['valid']:
+        fn(*args, **kwargs)
+    else:
+        return print('invalid user')
   return wrapper_func
 
 
