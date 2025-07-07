@@ -1,0 +1,1 @@
+THis is a sample text to file. We are going to work with this file.
